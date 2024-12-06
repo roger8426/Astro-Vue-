@@ -1,0 +1,8 @@
+{
+    "code": 200,
+    "data": {
+        "title": "about title",
+        "description": "about description"
+    },
+    "message": "SUCCESS TO GET ABOUT DATA"
+}
