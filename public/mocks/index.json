@@ -1,0 +1,192 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "sectionTitle": "熱門商品",
+      "productList": [
+        {
+          "productTitle": "原神",
+          "imgUrl": "https://fakeimg.pl/1000x400/?text=GENSHIN",
+          "sales": "9"
+        },
+        {
+          "productTitle": "崩壞：星穹鐵道",
+          "imgUrl": "https://fakeimg.pl/1000x400/?text=STARRAIL",
+          "sales": "8.8"
+        },
+        {
+          "productTitle": "絕區零",
+          "imgUrl": "https://fakeimg.pl/1000x400/?text=ZZZ",
+          "sales": "9.5"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "立即儲值",
+      "childrenTag": [
+        {
+          "tagTitle": "全部"
+        },
+        {
+          "tagTitle": "遊戲直儲"
+        },
+        {
+          "tagTitle": "人工儲值"
+        }
+      ],
+      "productList": [
+        {
+          "productTitle": "game1",
+          "sales": "8.8",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "isManual": true
+        },
+        {
+          "productTitle": "game2",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game3",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game4",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game5",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game6",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game7",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game8",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game9",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game10",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game11",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game12",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game13",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game14",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game15",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game16",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game17",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game18",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        },
+        {
+          "productTitle": "game19",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": true
+        },
+        {
+          "productTitle": "game20",
+          "imgUrl": "https://fakeimg.pl/400x400/?text=",
+          "sales": "8.8",
+          "isManual": false
+        }
+      ]
+    },
+    {
+      "sectionTitle": "最新貼文",
+      "postsList": [
+        {
+          "postTitle": "Post1",
+          "date": "2024/12/12",
+          "imgUrl": "https://fakeimg.pl/600x400/?text=POST-1"
+        },
+        {
+          "postTitle": "Post2",
+          "date": "2024/12/12",
+          "imgUrl": "https://fakeimg.pl/600x400/?text=POST-2"
+        },
+        {
+          "postTitle": "Post3",
+          "date": "2024/12/12",
+          "imgUrl": "https://fakeimg.pl/600x400/?text=POST-3"
+        },
+        {
+          "postTitle": "Post4",
+          "date": "2024/12/12",
+          "imgUrl": "https://fakeimg.pl/600x400/?text=POST-4"
+        },
+        {
+          "postTitle": "Post5",
+          "date": "2024/12/12",
+          "imgUrl": "https://fakeimg.pl/600x400/?text=POST-5"
+        }
+      ]
+    }
+  ],
+"message": "SUCCESS TO GET PAGE INFO"
+}

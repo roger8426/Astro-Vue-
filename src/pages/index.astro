@@ -1,8 +1,14 @@
 ---
 import Layout from "@/layouts/VueLayout.vue";
-import HelloWorld from "@/pages/HelloWorld.vue";
+import Carousel from "@/components/index/Carousel.vue"
+import Game from "@/components/index/Games.vue"
 ---
 
-<Layout client:load>
-  <HelloWorld client:load />
+<Layout client:only="vue">
+  <div class="my-4">
+    <Carousel client:load />
+  </div>
+  <div class="my-2">
+    <Game  client:load />
+  </div>
 </Layout>

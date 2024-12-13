@@ -1,0 +1,30 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "title": "原神",
+            "id": "1"
+        },
+        {
+            "title": "崩壞3",
+            "id": "2"
+        },
+        {
+            "title": "崩壞：星穹鐵道",
+            "id": "3"
+        },
+        {
+            "title": "絕區零",
+            "id": "4"
+        },
+        {
+            "title": "Fate Grand Order",
+            "id": "5"
+        },
+        {
+            "title": "鳴潮",
+            "id": "6"
+        }
+    ],
+    "message": "SUCCESS TO GET HOME DATA"
+}

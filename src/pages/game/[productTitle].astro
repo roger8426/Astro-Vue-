@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/VueLayout.vue";
+import Game from "@/components/game/SingleGame.vue"
+
+export async function getStaticPaths() {
+    const routes = []
+    for(let i = 0; i <= 20; i++) {
+        const route = {
+            params: { productTitle: `game${i}` }
+        }
+        routes.push(route)
+    }
+
+    return routes
+}
+
+const { productTitle } = Astro.params
+---
+
+<Layout client:only="vue">
+    <Game title={ productTitle } client:load />
+</Layout>

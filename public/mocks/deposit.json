@@ -1,0 +1,8 @@
+{
+    "code": 200,
+    "data": [{
+        "title": "deposit title",
+        "description": "deposit description"
+    }],
+    "message": "SUCCESS TO GET DEPOSIT DATA"
+}

@@ -1,6 +1,6 @@
 import axios, { type AxiosInstance } from 'axios';
 
-const isLocal = true
+// const isLocal = true
 const getBaseURL = () => {
     // if (isLocal) {
     //     const currentPath = window.location.pathname.replace(/\/$/, "");
@@ -24,13 +24,13 @@ interface baseResponse<T> {
 }
 
 // 錯誤介面
-interface error<T> {
-    status: number;
-    data: baseResponse<T>;
-    message: string;
-}
+// interface error<T> {
+//     status: number;
+//     data: baseResponse<T>;
+//     message: string;
+// }
 
-let errorData: error<object>
+// let errorData: error<object>
 
 // 請求攔截
 instance.interceptors.request.use()

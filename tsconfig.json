@@ -5,14 +5,24 @@
     "**/*"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "node_modules"
   ],
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
-    }
+    },
+    "types": ["vue", "pinia", "node"],
+    "lib": ["ESNext", "dom"]
   }
 }

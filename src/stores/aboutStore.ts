@@ -8,16 +8,17 @@ export const useAboutStore = defineStore('about', () => {
         description: string
     }
 
-    let aboutMeta: metaType = reactive({
+    const aboutMeta: metaType = reactive({
         title: "",
         description: ""
     })
 
-    const updateAboutMeta = async () => {        
+    const updateAboutMeta = async () => {
         const { data } = await getAboutData()
+        const meta: metaType = data.data[0]
 
-        aboutMeta.title = data.data.title
-        aboutMeta.description = data.data.description
+        aboutMeta.title = meta.title
+        aboutMeta.description = meta.description
     }
 
     return {

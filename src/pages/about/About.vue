@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>about Vue + Astro</h1>
+    <h1>這是關於頁面</h1>
   </div>
 </template>
 
@@ -8,22 +8,9 @@
 import { onMounted } from "vue";
 import { pinia } from "@/stores/store";
 import { useAboutStore } from "@/stores/aboutStore";
+import updateMeta from "@/utils/meta";
 
 const aboutStore = useAboutStore(pinia);
-
-onMounted(async () => {
-  await aboutStore.updateAboutMeta();
-
-  const { title, description } = aboutStore.aboutMeta;
-  document.title = title;
-  const metaDescription = document.querySelector("meta[name='description']");
-  if (metaDescription) {
-    metaDescription.setAttribute("content", description);
-  } else {
-    const newMeta = document.createElement("meta");
-    newMeta.name = "description";
-    newMeta.content = description;
-    document.head.appendChild(newMeta);
-  }
-});
+await aboutStore.updateAboutMeta();
+updateMeta(aboutStore.aboutMeta);
 </script>

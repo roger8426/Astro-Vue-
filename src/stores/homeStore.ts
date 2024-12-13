@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { reactive } from 'vue'
-import { getHomeData } from '@/apis/home'
+import { getHomeMeta, getIndexContent } from '@/apis/home'
 
 export const useHomeStore = defineStore('home', () => {
     interface metaType {
@@ -8,20 +8,27 @@ export const useHomeStore = defineStore('home', () => {
         description: string
     }
 
-    let homeMeta: metaType = reactive({
+    const homeMeta: metaType = reactive({
         title: "",
         description: ""
     })
 
     const updateHomeMeta = async () => {
-        const { data } = await getHomeData()
-        
-        homeMeta.title = data.data.title
-        homeMeta.description = data.data.description
+        const { data } = await getHomeMeta()
+        const meta: metaType = data.data[0]
+
+        homeMeta.title = meta.title
+        homeMeta.description = meta.description
+    }
+
+    const getIndexPageData = async () => {
+        const { data } = await getIndexContent()
+        return data.data
     }
 
     return {
         homeMeta,
-        updateHomeMeta
+        updateHomeMeta,
+        getIndexPageData
     }
 })

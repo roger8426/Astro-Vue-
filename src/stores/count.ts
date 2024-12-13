@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, computed, triggerRef } from 'vue'
+import { ref, computed } from 'vue'
 
 export const useCountStore = defineStore('hello', () => {
     const count = ref(0)
