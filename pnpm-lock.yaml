@@ -53,9 +53,6 @@ importers:
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
-      vue-i18n:
-        specifier: ^10.0.5
-        version: 10.0.5(vue@3.5.13(typescript@5.7.2))
       vueuc:
         specifier: ^0.4.64
         version: 0.4.64(vue@3.5.13(typescript@5.7.2))
@@ -919,18 +916,6 @@ packages:
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [win32]
-
-  '@intlify/core-base@10.0.5':
-    resolution: {integrity: sha512-F3snDTQs0MdvnnyzTDTVkOYVAZOE/MHwRvF7mn7Jw1yuih4NrFYLNYIymGlLmq4HU2iIdzYsZ7f47bOcwY73XQ==}
-    engines: {node: '>= 16'}
-
-  '@intlify/message-compiler@10.0.5':
-    resolution: {integrity: sha512-6GT1BJ852gZ0gItNZN2krX5QAmea+cmdjMvsWohArAZ3GmHdnNANEcF9JjPXAMRtQ6Ux5E269ymamg/+WU6tQA==}
-    engines: {node: '>= 16'}
-
-  '@intlify/shared@10.0.5':
-    resolution: {integrity: sha512-bmsP4L2HqBF6i6uaMqJMcFBONVjKt+siGluRq4Ca4C0q7W2eMaVZr8iCgF9dKbcVXutftkC7D6z2SaSMmLiDyA==}
-    engines: {node: '>= 16'}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -4815,12 +4800,6 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-i18n@10.0.5:
-    resolution: {integrity: sha512-9/gmDlCblz3i8ypu/afiIc/SUIfTTE1mr0mZhb9pk70xo2csHAM9mp2gdQ3KD2O0AM3Hz/5ypb+FycTj/lHlPQ==}
-    engines: {node: '>= 16'}
-    peerDependencies:
-      vue: ^3.0.0
-
   vue-inbrowser-compiler-independent-utils@4.71.1:
     resolution: {integrity: sha512-K3wt3iVmNGaFEOUR4JIThQRWfqokxLfnPslD41FDZB2ajXp789+wCqJyGYlIFsvEQ2P61PInw6/ph5iiqg51gg==}
     peerDependencies:
@@ -5699,18 +5678,6 @@ snapshots:
 
   '@img/sharp-win32-x64@0.33.5':
     optional: true
-
-  '@intlify/core-base@10.0.5':
-    dependencies:
-      '@intlify/message-compiler': 10.0.5
-      '@intlify/shared': 10.0.5
-
-  '@intlify/message-compiler@10.0.5':
-    dependencies:
-      '@intlify/shared': 10.0.5
-      source-map-js: 1.2.1
-
-  '@intlify/shared@10.0.5': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -10461,13 +10428,6 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
-
-  vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)):
-    dependencies:
-      '@intlify/core-base': 10.0.5
-      '@intlify/shared': 10.0.5
-      '@vue/devtools-api': 6.6.4
-      vue: 3.5.13(typescript@5.7.2)
 
   vue-inbrowser-compiler-independent-utils@4.71.1(vue@3.5.13(typescript@5.7.2)):
     dependencies:

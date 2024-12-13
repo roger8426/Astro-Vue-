@@ -5,20 +5,20 @@
         <p
           class="text-xl font-bold text-lime-600 border-s-4 ps-3 border-emerald-500 mb-4"
         >
-          {{ section.sectionTitle }}
+          {{ t(section.sectionTitle) }}
         </p>
         <a
           href="#"
-          v-if="section.sectionTitle === '最新貼文'"
+          v-if="section.sectionTitle === 'LATEST_POST'"
           class="text-green-600 text-base font-bold"
           >看全部</a
         >
       </div>
       <div
         class="flex gap-4 mb-12"
-        :class="{ 'flex-wrap': section.sectionTitle === '立即儲值' }"
+        :class="{ 'flex-wrap': section.sectionTitle === 'DEPOSIT_NOW' }"
       >
-        <template v-if="section.sectionTitle === '熱門商品'">
+        <template v-if="section.sectionTitle === 'HOT_GAMES'">
           <a
             v-for="product in section.productList"
             :key="product.productTitle"
@@ -34,7 +34,7 @@
             </div>
           </a>
         </template>
-        <template v-if="section.sectionTitle === '立即儲值'">
+        <template v-if="section.sectionTitle === 'DEPOSIT_NOW'">
           <a
             v-for="product in section.productList"
             :key="product.productTitle"
@@ -61,7 +61,7 @@
             </div>
           </a>
         </template>
-        <template v-if="section.sectionTitle === '最新貼文'">
+        <template v-if="section.sectionTitle === 'LATEST_POSTS'">
           <a
             v-for="post in section.postsList"
             :key="post.postTitle"
@@ -86,10 +86,16 @@
 import { ref, onMounted } from "vue";
 import { pinia } from "@/stores/store";
 import { useHomeStore } from "@/stores/homeStore";
+import { useLanguageStore } from "@/stores/language";
+import { getTranslation } from "@/locales/index";
+
 import updateMeta from "@/utils/meta";
 
 const homeStore = useHomeStore(pinia);
+const i18n = useLanguageStore(pinia);
 const sectionData = ref([]);
+
+const t = (key) => getTranslation(i18n.currentLanguage, key);
 
 await homeStore.updateHomeMeta();
 updateMeta(homeStore.homeMeta);

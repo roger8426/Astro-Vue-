@@ -2,7 +2,7 @@
   "code": 200,
   "data": [
     {
-      "sectionTitle": "熱門商品",
+      "sectionTitle": "HOT_GAMES",
       "productList": [
         {
           "productTitle": "原神",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "sectionTitle": "立即儲值",
+      "sectionTitle": "DEPOSIT_NOW",
       "childrenTag": [
         {
           "tagTitle": "全部"
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "sectionTitle": "最新貼文",
+      "sectionTitle": "LATEST_POSTS",
       "postsList": [
         {
           "postTitle": "Post1",

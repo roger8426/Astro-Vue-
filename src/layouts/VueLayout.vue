@@ -29,7 +29,9 @@
         @blur="onBlur"
       />
     </n-dropdown>
-    <n-button>中</n-button>
+    <n-button @click="i18n.switchLanguage(targetLanguage())">{{
+      i18n.currentLanguage === "zh" ? "EN" : "中"
+    }}</n-button>
     <n-button>登入</n-button>
   </n-layout-header>
   <div class="2xl:container mx-auto px-6">
@@ -45,8 +47,11 @@ import { NMenu, NLayoutHeader, NInput, NButton, NDropdown } from "naive-ui";
 import { ref, onMounted } from "vue";
 import { pinia } from "@/stores/store";
 import { useLayoutStore } from "@/stores/layout";
+import { useLanguageStore } from "@/stores/language";
+import { getLocalStorage, setLocalStorage } from "@/utils/localStorage";
 
 const layoutStore = useLayoutStore(pinia);
+const i18n = useLanguageStore(pinia);
 
 // 主選單
 const selectedMenu = ref("home");
@@ -93,10 +98,16 @@ const onBlur = () => {
   }, 100);
 };
 
+const targetLanguage = () => {
+  const lang = getLocalStorage("ME_PAY_LANGUAGE") || "zh";
+  return lang === "zh" ? "en" : "zh";
+};
+
 onMounted(() => {
   if (inputRef.value) {
     dropdownWidth.value = inputRef.value.$el.offsetWidth;
   }
+  i18n.setCurrentLanguage();
 });
 
 window.addEventListener("resize", () => {

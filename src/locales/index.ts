@@ -1,14 +1,23 @@
-import { createI18n } from 'vue-i18n'
-import zh from './languages/zh.json'
-import en from './languages/en.json'
+import zh from './languages/zh.json';
+import en from './languages/en.json';
 
-const i18n = createI18n({
-    legacy: false,
-    locale: 'zh',
-    messages: {
-        "en-US": en,
-        "zh-TW": zh
+type Translations = {
+    [key: string]: {
+        [key: string]: string;
     }
-})
+};
 
-export { i18n }
+type Language = keyof typeof translations;
+type TranslationKeys = keyof typeof zh;
+
+const DEFAULT_LANGUAGE: Language = 'zh';
+
+const translations: Translations = {
+    zh,
+    en
+};
+
+export const getTranslation = (lang: Language, key: TranslationKeys): string => {
+    const language = translations[lang] ? lang : DEFAULT_LANGUAGE;
+    return translations[language]?.[key] || key;
+};
