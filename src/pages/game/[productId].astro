@@ -1,0 +1,10 @@
+---
+import Layout from "@/layouts/VueLayout.vue";
+import Game from "@/components/game/SingleGame.vue"
+
+const productId = Astro.params?.productId || ""
+---
+
+<Layout client:only="vue">
+    <Game productId={ productId } client:load />
+</Layout>

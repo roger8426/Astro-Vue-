@@ -38,7 +38,7 @@
           <a
             v-for="product in section.productList"
             :key="product.productTitle"
-            :href="`/game/${product.productTitle}`"
+            :href="`/game/${product.productId}`"
             class="block w-32"
           >
             <div class="relative w-full">

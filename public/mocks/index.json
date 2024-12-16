@@ -37,120 +37,140 @@
       "productList": [
         {
           "productTitle": "game1",
+          "productId": 1,
           "sales": "8.8",
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "isManual": true
         },
         {
           "productTitle": "game2",
+          "productId": 2,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game3",
+          "productId": 3,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game4",
+          "productId": 4,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game5",
+          "productId": 5,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game6",
+          "productId": 6,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game7",
+          "productId": 7,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game8",
+          "productId": 8,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game9",
+          "productId": 9,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game10",
+          "productId": 10,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game11",
+          "productId": 11,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game12",
+          "productId": 12,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game13",
+          "productId": 13,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game14",
+          "productId": 14,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game15",
+          "productId": 15,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game16",
+          "productId": 16,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game17",
+          "productId": 17,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game18",
+          "productId": 18,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
         },
         {
           "productTitle": "game19",
+          "productId": 19,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": true
         },
         {
           "productTitle": "game20",
+          "productId": 20,
           "imgUrl": "https://fakeimg.pl/400x400/?text=",
           "sales": "8.8",
           "isManual": false
